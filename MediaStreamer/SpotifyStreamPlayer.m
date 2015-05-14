@@ -14,6 +14,8 @@
 @property (strong, nonatomic, getter=getDefaultSession) SPTSession* session;
 @property (strong, nonatomic) SPTAudioStreamingController* player;
 @property (assign, nonatomic) MediaStreamAudioPlayerState playerState;
+@property (strong, nonatomic) NSString* uri;
+@property (assign, nonatomic) NSTimeInterval currentOffset;
 
 @end
 
@@ -42,6 +44,7 @@
 }
 
 - (void)play:(NSString *)streamURL {
+    self.uri = streamURL;
     [SPTTrack trackWithURI:[NSURL URLWithString:streamURL] session:self.session callback:^(NSError *error, id object) {
         if (error) {
             NSLog(@"Track lookup error: %@", error.debugDescription);
@@ -68,11 +71,39 @@
 }
 
 - (void)pause {
-//    [self.player ]
+    [self pauseResume];
 }
 
 - (void)resume {
-//    [self.player ]
+    [self pauseResume];
+}
+
+- (void) pauseResume {
+    if (self.player.isPlaying) {
+        _currentOffset = self.player.currentPlaybackPosition;
+        [self.player setIsPlaying:NO callback:^(NSError *error) {
+            if (error) {
+                NSLog(@"%@", error.localizedDescription);
+            } else {
+                _playerState = MediaStreamAudioPlayerStatePaused;
+            }
+        }];
+    } else {
+        [SPTTrack trackWithURI:[NSURL URLWithString:self.uri] session:self.session callback:^(NSError *error, id object) {
+        if (error) {
+            NSLog(@"Track lookup error: %@", error.debugDescription);
+        } else {
+            [self.player seekToOffset:_currentOffset callback:^(NSError *error) {
+                if (error) {
+                    NSLog(@"%@", error.localizedDescription);
+                }
+                [self.player setIsPlaying:YES callback:^(NSError *error) {
+                    _playerState = MediaStreamAudioPlayerStatePlaying;
+                }];
+            }];
+        }
+        }];
+    }
 }
 
 - (MediaStreamAudioPlayerState)state {
