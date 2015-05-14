@@ -1,0 +1,6 @@
+#include "Pods-MediaStreamer-CocoaSoundCloudUI.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/CocoaSoundCloudUI" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaSoundCloudAPI" "${PODS_ROOT}/Headers/Public/CocoaSoundCloudUI" "${PODS_ROOT}/Headers/Public/NXOAuth2Client" "${PODS_ROOT}/Headers/Public/OHAttributedLabel" "${PODS_ROOT}/Headers/Public/StreamingKit" "${PODS_ROOT}/Headers/Public/TheSidebarController" "${PODS_ROOT}/Headers/Public/TheSidebarController/TheSidebarController" "${PODS_ROOT}/Headers/Public/TheSidebarController/TheSidebarController/Animations"
+OTHER_LDFLAGS = ${PODS_MEDIASTREAMER_COCOASOUNDCLOUDUI_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445E21BA69C177A449B20EED /* libPods-MediaStreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 827E1351773BE7B08FED35CE /* libPods-MediaStreamer.a */; };
+		6D147C3C1B04191800E81504 /* SoundCloudStreamPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D147C3B1B04191800E81504 /* SoundCloudStreamPlayer.m */; };
+		6D147C3F1B04193400E81504 /* SpotifyStreamPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D147C3E1B04193400E81504 /* SpotifyStreamPlayer.m */; };
+		6D1EA8391B0248030040F527 /* SoundCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EA8381B0248030040F527 /* SoundCloudService.m */; };
+		6D1EA83C1B0248110040F527 /* SpotifyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EA83B1B0248110040F527 /* SpotifyService.m */; };
+		6D1EA8411B0248CB0040F527 /* MediaTypeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EA8401B0248CB0040F527 /* MediaTypeFactory.m */; };
+		6D1EA8441B025D180040F527 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1EA8431B025D180040F527 /* AVFoundation.framework */; };
+		6D1EA8461B025E410040F527 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1EA8451B025E410040F527 /* Spotify.framework */; };
 		6D44DCD31B0177390061F793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44DCD21B0177390061F793 /* main.m */; };
 		6D44DCD61B0177390061F793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44DCD51B0177390061F793 /* AppDelegate.m */; };
-		6D44DCD91B0177390061F793 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44DCD81B0177390061F793 /* ViewController.m */; };
+		6D44DCD91B0177390061F793 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44DCD81B0177390061F793 /* SearchViewController.m */; };
 		6D44DCDC1B0177390061F793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D44DCDA1B0177390061F793 /* Main.storyboard */; };
 		6D44DCDE1B0177390061F793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D44DCDD1B0177390061F793 /* Images.xcassets */; };
 		6D44DCE11B0177390061F793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D44DCDF1B0177390061F793 /* LaunchScreen.xib */; };
 		6D44DCED1B0177390061F793 /* MediaStreamerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D44DCEC1B0177390061F793 /* MediaStreamerTests.m */; };
+		6D4B37581B02F00D00CB4159 /* MediaTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B37571B02F00D00CB4159 /* MediaTrack.m */; };
+		6D4B375B1B02F47700CB4159 /* MediaStreamPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B375A1B02F47700CB4159 /* MediaStreamPlayerController.m */; };
+		6D4B37701B032CF000CB4159 /* MediaSourceSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B376E1B032CF000CB4159 /* MediaSourceSelectorView.m */; };
+		6D4B37711B032CF000CB4159 /* MediaSourceSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4B376F1B032CF000CB4159 /* MediaSourceSelectorView.xib */; };
+		6D527B8B1B01A25A00823C61 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D527B8A1B01A25A00823C61 /* MenuViewController.m */; };
+		6DCF9F431B01D208008A2386 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCF9F421B01D208008A2386 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +41,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D147C391B0418F400E81504 /* MediaStreamPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaStreamPlayerProtocol.h; sourceTree = "<group>"; };
+		6D147C3A1B04191800E81504 /* SoundCloudStreamPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudStreamPlayer.h; sourceTree = "<group>"; };
+		6D147C3B1B04191800E81504 /* SoundCloudStreamPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudStreamPlayer.m; sourceTree = "<group>"; };
+		6D147C3D1B04193400E81504 /* SpotifyStreamPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyStreamPlayer.h; sourceTree = "<group>"; };
+		6D147C3E1B04193400E81504 /* SpotifyStreamPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyStreamPlayer.m; sourceTree = "<group>"; };
+		6D1EA8371B0248030040F527 /* SoundCloudService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudService.h; sourceTree = "<group>"; };
+		6D1EA8381B0248030040F527 /* SoundCloudService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudService.m; sourceTree = "<group>"; };
+		6D1EA83A1B0248110040F527 /* SpotifyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyService.h; sourceTree = "<group>"; };
+		6D1EA83B1B0248110040F527 /* SpotifyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyService.m; sourceTree = "<group>"; };
+		6D1EA83E1B0248780040F527 /* MediaServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaServiceProtocol.h; sourceTree = "<group>"; };
+		6D1EA83F1B0248CB0040F527 /* MediaTypeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTypeFactory.h; sourceTree = "<group>"; };
+		6D1EA8401B0248CB0040F527 /* MediaTypeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTypeFactory.m; sourceTree = "<group>"; };
+		6D1EA8421B0249040040F527 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		6D1EA8431B025D180040F527 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6D1EA8451B025E410040F527 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = "MediaStreamer/Frameworks/Spotify/ios-sdk-beta-8/Spotify.framework"; sourceTree = "<group>"; };
 		6D44DCCD1B0177390061F793 /* MediaStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44DCD11B0177390061F793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D44DCD21B0177390061F793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D44DCD41B0177390061F793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D44DCD51B0177390061F793 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6D44DCD71B0177390061F793 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D44DCD81B0177390061F793 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D44DCD71B0177390061F793 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		6D44DCD81B0177390061F793 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6D44DCDB1B0177390061F793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D44DCDD1B0177390061F793 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D44DCE01B0177390061F793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D44DCE61B0177390061F793 /* MediaStreamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStreamerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D44DCEB1B0177390061F793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D44DCEC1B0177390061F793 /* MediaStreamerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaStreamerTests.m; sourceTree = "<group>"; };
+		6D4B37561B02F00D00CB4159 /* MediaTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTrack.h; sourceTree = "<group>"; };
+		6D4B37571B02F00D00CB4159 /* MediaTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTrack.m; sourceTree = "<group>"; };
+		6D4B37591B02F47700CB4159 /* MediaStreamPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaStreamPlayerController.h; sourceTree = "<group>"; };
+		6D4B375A1B02F47700CB4159 /* MediaStreamPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaStreamPlayerController.m; sourceTree = "<group>"; };
+		6D4B376D1B032CF000CB4159 /* MediaSourceSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaSourceSelectorView.h; sourceTree = "<group>"; };
+		6D4B376E1B032CF000CB4159 /* MediaSourceSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaSourceSelectorView.m; sourceTree = "<group>"; };
+		6D4B376F1B032CF000CB4159 /* MediaSourceSelectorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaSourceSelectorView.xib; sourceTree = "<group>"; };
+		6D527B891B01A25A00823C61 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		6D527B8A1B01A25A00823C61 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		6DCF9F411B01D208008A2386 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		6DCF9F421B01D208008A2386 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		827E1351773BE7B08FED35CE /* libPods-MediaStreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaStreamer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4952F81C1D53304322189D /* Pods-MediaStreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaStreamer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaStreamer/Pods-MediaStreamer.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F2C63042026162E03725BD /* Pods-MediaStreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaStreamer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaStreamer/Pods-MediaStreamer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1EA8461B025E410040F527 /* Spotify.framework in Frameworks */,
+				6D1EA8441B025D180040F527 /* AVFoundation.framework in Frameworks */,
+				445E21BA69C177A449B20EED /* libPods-MediaStreamer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +106,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51D82EBC60D8F0C4080E8DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE4952F81C1D53304322189D /* Pods-MediaStreamer.debug.xcconfig */,
+				F6F2C63042026162E03725BD /* Pods-MediaStreamer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66296B79D19C97C8ED3C6D8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D1EA8451B025E410040F527 /* Spotify.framework */,
+				6D1EA8431B025D180040F527 /* AVFoundation.framework */,
+				827E1351773BE7B08FED35CE /* libPods-MediaStreamer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D1EA8361B0247A10040F527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B37561B02F00D00CB4159 /* MediaTrack.h */,
+				6D4B37571B02F00D00CB4159 /* MediaTrack.m */,
+				6D1EA8371B0248030040F527 /* SoundCloudService.h */,
+				6D1EA8381B0248030040F527 /* SoundCloudService.m */,
+				6D1EA83A1B0248110040F527 /* SpotifyService.h */,
+				6D1EA83B1B0248110040F527 /* SpotifyService.m */,
+				6D1EA83F1B0248CB0040F527 /* MediaTypeFactory.h */,
+				6D1EA8401B0248CB0040F527 /* MediaTypeFactory.m */,
+				6D1EA8421B0249040040F527 /* Enums.h */,
+				6D147C3A1B04191800E81504 /* SoundCloudStreamPlayer.h */,
+				6D147C3B1B04191800E81504 /* SoundCloudStreamPlayer.m */,
+				6D147C3D1B04193400E81504 /* SpotifyStreamPlayer.h */,
+				6D147C3E1B04193400E81504 /* SpotifyStreamPlayer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6D1EA83D1B0248180040F527 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D1EA83E1B0248780040F527 /* MediaServiceProtocol.h */,
+				6D147C391B0418F400E81504 /* MediaStreamPlayerProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		6D44DCC41B0177390061F793 = {
 			isa = PBXGroup;
 			children = (
 				6D44DCCF1B0177390061F793 /* MediaStreamer */,
 				6D44DCE91B0177390061F793 /* MediaStreamerTests */,
 				6D44DCCE1B0177390061F793 /* Products */,
+				51D82EBC60D8F0C4080E8DB2 /* Pods */,
+				66296B79D19C97C8ED3C6D8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +177,13 @@
 		6D44DCCF1B0177390061F793 /* MediaStreamer */ = {
 			isa = PBXGroup;
 			children = (
-				6D44DCD41B0177390061F793 /* AppDelegate.h */,
-				6D44DCD51B0177390061F793 /* AppDelegate.m */,
-				6D44DCD71B0177390061F793 /* ViewController.h */,
-				6D44DCD81B0177390061F793 /* ViewController.m */,
-				6D44DCDA1B0177390061F793 /* Main.storyboard */,
+				6D4B376B1B032CC400CB4159 /* UIKit Custom Control */,
+				6D44DCF81B0177A60061F793 /* App */,
+				6D1EA83D1B0248180040F527 /* Protocols */,
+				6D1EA8361B0247A10040F527 /* Models */,
+				6D44DCF71B01778A0061F793 /* Controllers */,
+				6D44DCF61B0177790061F793 /* Storyboard and Xibs */,
 				6D44DCDD1B0177390061F793 /* Images.xcassets */,
-				6D44DCDF1B0177390061F793 /* LaunchScreen.xib */,
 				6D44DCD01B0177390061F793 /* Supporting Files */,
 			);
 			path = MediaStreamer;
@@ -119,6 +215,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6D44DCF61B0177790061F793 /* Storyboard and Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				6D44DCDF1B0177390061F793 /* LaunchScreen.xib */,
+				6D44DCDA1B0177390061F793 /* Main.storyboard */,
+			);
+			name = "Storyboard and Xibs";
+			sourceTree = "<group>";
+		};
+		6D44DCF71B01778A0061F793 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D44DCD71B0177390061F793 /* SearchViewController.h */,
+				6D44DCD81B0177390061F793 /* SearchViewController.m */,
+				6D527B891B01A25A00823C61 /* MenuViewController.h */,
+				6D527B8A1B01A25A00823C61 /* MenuViewController.m */,
+				6DCF9F411B01D208008A2386 /* SettingsViewController.h */,
+				6DCF9F421B01D208008A2386 /* SettingsViewController.m */,
+				6D4B37591B02F47700CB4159 /* MediaStreamPlayerController.h */,
+				6D4B375A1B02F47700CB4159 /* MediaStreamPlayerController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6D44DCF81B0177A60061F793 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6D44DCD41B0177390061F793 /* AppDelegate.h */,
+				6D44DCD51B0177390061F793 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		6D4B376B1B032CC400CB4159 /* UIKit Custom Control */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B376C1B032CCF00CB4159 /* Media Source Selector */,
+			);
+			name = "UIKit Custom Control";
+			sourceTree = "<group>";
+		};
+		6D4B376C1B032CCF00CB4159 /* Media Source Selector */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B376D1B032CF000CB4159 /* MediaSourceSelectorView.h */,
+				6D4B376E1B032CF000CB4159 /* MediaSourceSelectorView.m */,
+				6D4B376F1B032CF000CB4159 /* MediaSourceSelectorView.xib */,
+			);
+			name = "Media Source Selector";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D44DCF01B0177390061F793 /* Build configuration list for PBXNativeTarget "MediaStreamer" */;
 			buildPhases = (
+				BA35A284440A21DFD65FD431 /* Check Pods Manifest.lock */,
 				6D44DCC91B0177390061F793 /* Sources */,
 				6D44DCCA1B0177390061F793 /* Frameworks */,
 				6D44DCCB1B0177390061F793 /* Resources */,
+				24299FE77AB2751B2D8D2794 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D44DCDC1B0177390061F793 /* Main.storyboard in Resources */,
+				6D4B37711B032CF000CB4159 /* MediaSourceSelectorView.xib in Resources */,
 				6D44DCE11B0177390061F793 /* LaunchScreen.xib in Resources */,
 				6D44DCDE1B0177390061F793 /* Images.xcassets in Resources */,
 			);
@@ -214,14 +364,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24299FE77AB2751B2D8D2794 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaStreamer/Pods-MediaStreamer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA35A284440A21DFD65FD431 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D44DCC91B0177390061F793 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D44DCD91B0177390061F793 /* ViewController.m in Sources */,
+				6D147C3F1B04193400E81504 /* SpotifyStreamPlayer.m in Sources */,
+				6D527B8B1B01A25A00823C61 /* MenuViewController.m in Sources */,
+				6D4B37701B032CF000CB4159 /* MediaSourceSelectorView.m in Sources */,
+				6D4B37581B02F00D00CB4159 /* MediaTrack.m in Sources */,
+				6D1EA8411B0248CB0040F527 /* MediaTypeFactory.m in Sources */,
+				6D147C3C1B04191800E81504 /* SoundCloudStreamPlayer.m in Sources */,
+				6D1EA83C1B0248110040F527 /* SpotifyService.m in Sources */,
+				6D44DCD91B0177390061F793 /* SearchViewController.m in Sources */,
+				6DCF9F431B01D208008A2386 /* SettingsViewController.m in Sources */,
+				6D1EA8391B0248030040F527 /* SoundCloudService.m in Sources */,
 				6D44DCD61B0177390061F793 /* AppDelegate.m in Sources */,
 				6D44DCD31B0177390061F793 /* main.m in Sources */,
+				6D4B375B1B02F47700CB4159 /* MediaStreamPlayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +540,13 @@
 		};
 		6D44DCF11B0177390061F793 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4952F81C1D53304322189D /* Pods-MediaStreamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MediaStreamer/Frameworks/Spotify/ios-sdk-beta-8",
+				);
 				INFOPLIST_FILE = MediaStreamer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +555,13 @@
 		};
 		6D44DCF21B0177390061F793 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F2C63042026162E03725BD /* Pods-MediaStreamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MediaStreamer/Frameworks/Spotify/ios-sdk-beta-8",
+				);
 				INFOPLIST_FILE = MediaStreamer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +621,7 @@
 				6D44DCF21B0177390061F793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D44DCF31B0177390061F793 /* Build configuration list for PBXNativeTarget "MediaStreamerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +630,7 @@
 				6D44DCF51B0177390061F793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
